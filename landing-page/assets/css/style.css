@@ -136,7 +136,7 @@ body {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  margin-left: 1rem;
+  margin-left: auto;
 }
 
 .nav-toggle {
@@ -207,7 +207,10 @@ body {
   box-shadow: none;
   background: rgba(15, 23, 42, 0.85);
   border-color: rgba(148, 163, 184, 0.35);
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  width: auto;
+  height: auto;
+  padding: 0.55rem 1.2rem;
 }
 
 
@@ -261,39 +264,38 @@ body {
 .language-switch {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  margin-left: 0.75rem;
+  order: 4;
 }
 
 .btn-language {
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.4rem 1rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  justify-content: center;
+  width: 2.2rem;
+  height: 2.2rem;
   border-radius: 999px;
-  border: 1px solid rgba(148, 163, 184, 0.28);
-  background: rgba(15, 23, 42, 0.55);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  background: rgba(15, 23, 42, 0.72);
   color: var(--color-white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   text-decoration: none;
-  box-shadow: 0 8px 16px rgba(2, 6, 23, 0.18);
-  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition);
-}
-
-.btn-language span[aria-hidden="true"] {
-  font-size: 1.05rem;
-  line-height: 1;
+  box-shadow: 0 8px 14px rgba(2, 6, 23, 0.28);
+  transition: background var(--transition), border-color var(--transition), box-shadow var(--transition), transform var(--transition);
 }
 
 .btn-language:hover,
 .btn-language:focus-visible {
-  background: rgba(34, 184, 207, 0.18);
-  border-color: rgba(34, 184, 207, 0.32);
-  box-shadow: 0 12px 22px rgba(15, 23, 42, 0.25);
+  background: rgba(34, 184, 207, 0.22);
+  border-color: rgba(34, 184, 207, 0.4);
+  box-shadow: 0 12px 24px rgba(15, 23, 42, 0.35);
+  transform: translateY(-1px);
 }
 
-.language-label {
+.btn-language .lang-code {
   line-height: 1;
 }
 
