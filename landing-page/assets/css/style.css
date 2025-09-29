@@ -965,6 +965,8 @@ section {
 
   .btn-language {
     padding: 0.35rem 0.85rem;
+    width: auto;
+    height: auto;
   }
 
   .hero-grid,
