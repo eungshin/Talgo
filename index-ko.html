@@ -1,0 +1,371 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>탈고 - 전문 문장 검토 도구</title>
+  <meta name="description" content="문법, 스타일, 서사까지 점검하는 전문 문장 리뷰로 소설과 시나리오를 출간급으로 완성하세요." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div class="noise-layer" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="#" aria-label="TG 탈고">
+        <span class="brand-mark" aria-hidden="true">TG</span>
+        <span class="brand-type">탈고</span>
+      </a>
+      <nav class="nav" aria-label="Primary" role="navigation">
+        <ul class="nav-list">
+          <li><a href="#features">기능 소개</a></li>
+          <li><a href="#workflow">워크플로</a></li>
+          <li><a href="#ai-lab">AI 랩</a></li>
+          <li><a href="#components">컴포넌트</a></li>
+          <li><a href="#pricing">요금제</a></li>
+        </ul>
+      </nav>
+      <div class="language-switch">
+        <a class="btn-language" href="index.html" lang="en" aria-label="View site in English">
+          <span aria-hidden="true" class="lang-code">us</span>
+          <span class="visually-hidden">English</span>
+        </a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="auth-ko.html">로그인</a>
+        <a class="btn btn-primary" href="auth-ko.html">리뷰 시작하기</a>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav">
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="nav-toggle-bar"></span>
+          <span class="visually-hidden">내비게이션 토글</span>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile"></nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">창작 작가를 위한 정밀 리뷰</p>
+          <h1> 탈고 [TALGO].</h1>
+          <h2> 자유롭게 문장을 편집하세요.</h2>
+          <p class="hero-lede">탈고는 문장 리뷰는 톤, 문법, 서사 구조까지 분석. 작가의 상상력에만 집중할 수 있도록 도와줘요.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cta">웹 앱 열기</a>
+            <a class="btn btn-secondary" href="#workflow">워크플로 보기</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <span class="stat-value">92%</span>
+              <span class="stat-label">편집 시간 단축</span>
+            </div>
+            <div>
+              <span class="stat-value">+75</span>
+              <span class="stat-label">고급 스타일 패턴</span>
+            </div>
+            <div>
+              <span class="stat-value">∞</span>
+              <span class="stat-label">형식 변환</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="preview-card">
+            <header>
+              <span class="badge">실시간 리뷰</span>
+              <div class="dot-group">
+                <span></span><span></span><span></span>
+              </div>
+            </header>
+            <div class="preview-body">
+              <article>
+                <h2>「달빛 원고」</h2>
+                <p>미나는 삐걱거리는 참나무 복도를 살금살금 걸으며 흔들리는 랜턴을 꼭 붙잡았다.</p>
+              </article>
+              <ul class="preview-suggestions">
+                <li>
+                  <span class="suggestion-tag">문법</span>
+                  <p><strong>ahead</strong> 대신 <strong>forward</strong>를 사용해 템포를 조절해 보세요.</p>
+                  <div class="suggestion-actions">
+                    <button class="pill">수락</button>
+                    <button class="pill pill-ghost">무시</button>
+                  </div>
+                </li>
+                <li>
+                  <span class="suggestion-tag alt">스타일</span>
+                  <p>분위기를 살릴 감각 묘사를 더해 보세요. “차가운 공기가 그녀를 감싸 안았다.”를 제안합니다.</p>
+                  <div class="suggestion-actions">
+                    <button class="pill">적용</button>
+                    <button class="pill pill-ghost">건너뛰기</button>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="floating-card" aria-hidden="true">
+            <p><strong> 다양한 확장자 지원</strong> • PDF · DOCX · EPUB</p>
+            <span class="pulse"></span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-prompt">
+        <span>탐색하려면 스크롤</span>
+        <div class="chevron"></div>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="신뢰받는 고객사">
+      <div class="container trust-grid">
+        <h2>출판사와 작가 팀이 신뢰합니다</h2>
+        <ul class="trust-logos">
+          <li>Inkhouse Media</li>
+          <li>StoryCraft Studios</li>
+          <li>Northstar Publishing</li>
+          <li>Arcanum Audio</li>
+          <li>Brighthue Labs</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container section-head">
+        <h2>전방위 문장 리뷰 엔진</h2>
+        <p>문장부호부터 서사 톤까지, 창작 흐름을 방해하지 않고 원고의 모든 층위를 점검합니다.</p>
+      </div>
+      <div class="container feature-grid">
+        <article class="feature-card">
+          <h3>문맥형 문법 검사</h3>
+          <p>소설 템포와 대사를 고려해 시제 오류, 문장부호 실수, 군더더기 문장을 바로잡습니다.</p>
+          <ul>
+            <li>자연어 휴리스틱</li>
+            <li>다국어 감지</li>
+            <li>상황별 맞춤 제안</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <h3>스타일 변환</h3>
+          <p>AP, 시카고, 시나리오 등 원하는 스타일로 한 번에 전환하되 작가의 목소리는 유지합니다.</p>
+          <ul>
+            <li>장르 기반 톤 프리셋</li>
+            <li>음성 보존 점수</li>
+            <li>협업 메모 공유</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <h3>창의력 부스터</h3>
+          <p>캐릭터와 주제를 지키면서 대체 문장을 제안해 다양한 전개를 탐색하도록 돕습니다.</p>
+          <ul>
+            <li>스토리라인 앵커</li>
+            <li>감정 인지 제안</li>
+            <li>AI 공동 집필 모드</li>
+          </ul>
+        </article>
+        <article class="feature-card">
+          <h3>형식 변환</h3>
+          <p>DOCX, PDF, EPUB으로 내보내며 주석과 추적 변경 사항을 보존합니다.</p>
+          <ul>
+            <li>클라우드 전달 최적화</li>
+            <li>버전 스냅샷</li>
+            <li>규정 준수 템플릿</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="workflow" id="workflow">
+      <div class="container section-head">
+        <h2>초고부터 출간까지 이어지는 워크플로</h2>
+        <p>작가의 작업 방식을 기준으로 설계했습니다. 몰입을 유지하고, 맥락을 살핀 뒤, 확신이 들면 내보내세요.</p>
+      </div>
+      <div class="container workflow-grid">
+        <article class="workflow-step">
+          <span class="step-index">01</span>
+          <h3>업로드</h3>
+          <p>DOCX나 PDF를 드래그하면 구조와 각주를 유지한 채 자동으로 파싱합니다.</p>
+        </article>
+        <article class="workflow-step">
+          <span class="step-index">02</span>
+          <h3>리뷰</h3>
+          <p>문법, 문장부호, 논리 오류가 서사 맥락과 함께 인라인으로 제시됩니다.</p>
+        </article>
+        <article class="workflow-step">
+          <span class="step-index">03</span>
+          <h3>결정</h3>
+          <p>제안을 단건, 묶음, 규칙 세트별로 수락하거나 거절해 원고 상태를 즉시 반영하세요.</p>
+        </article>
+        <article class="workflow-step">
+          <span class="step-index">04</span>
+          <h3>변환 및 다운로드</h3>
+          <p>선호 형식으로 내보내고, 추적 변경 요약을 함께 첨부합니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="ai-lab" id="ai-lab">
+      <div class="container ai-grid">
+        <div class="ai-copy">
+          <h2>AI 편집자를 자유롭게 선택하세요</h2>
+          <p>스릴러 템포부터 서정적인 문장까지, 프로젝트에 맞는 모델을 선택하고 피드백 기록을 유지한 채 전환할 수 있습니다.</p>
+          <ul class="pill-list">
+            <li>StoryArc Vision</li>
+            <li>Dialogue Whisperer</li>
+            <li>Continuity Keeper</li>
+            <li>Academic Clarity</li>
+          </ul>
+        </div>
+        <div class="ai-panel" role="presentation">
+          <div class="ai-switcher">
+            <button class="switch-btn active">스릴러</button>
+            <button class="switch-btn">판타지</button>
+            <button class="switch-btn">시나리오</button>
+          </div>
+          <div class="ai-preview">
+            <p class="preview-label">활성 모델 인사이트</p>
+            <p class="preview-text">“긴장감을 유지하려면 문장을 짧게 구성하고 세 번째 문단마다 감각 묘사를 강화하세요.”</p>
+            <p class="preview-footnote">모델: StoryArc Vision · 신뢰도 97%</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="components" id="components">
+      <div class="container section-head">
+        <h2>컴포넌트 중심 리뷰 경험</h2>
+        <p>8px 간격 시스템과 부드러운 곡선, 절제된 깊이감을 적용해 집중과 몰입을 돕습니다.</p>
+      </div>
+      <div class="container component-grid">
+        <article class="component-card" data-component="Navbar">
+          <h3>네비게이션 바</h3>
+          <p>프로젝트 전환, AI 선택, 알림 센터를 포함한 반응형 헤더입니다.</p>
+        </article>
+        <article class="component-card" data-component="Sidebar">
+          <h3>사이드바</h3>
+          <p>챕터 트리와 오류 필터를 접고 펼치며 컨텍스트를 유지합니다.</p>
+        </article>
+        <article class="component-card" data-component="FileUploader">
+          <h3>파일 업로더</h3>
+          <p>드래그 앤 드롭, 검증, 변환 미리보기까지 제공하는 업로드 컴포넌트입니다.</p>
+        </article>
+        <article class="component-card" data-component="ErrorList">
+          <h3>오류 목록</h3>
+          <p>문법, 스타일, 논리별로 우선순위를 매기고 빠른 액션을 제공합니다.</p>
+        </article>
+        <article class="component-card" data-component="SuggestionCard">
+          <h3>제안 카드</h3>
+          <p>맥락, 대체 문장, 수락/거절 토글을 한 영역에서 관리합니다.</p>
+        </article>
+        <article class="component-card" data-component="Modal">
+          <h3>모달</h3>
+          <p>AI 모델 선택, 내보내기 형식, 협업 메모를 위한 경량 대화 상자입니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing">
+      <div class="container pricing-grid">
+        <div class="pricing-card">
+          <p class="eyebrow">얼리 액세스</p>
+          <h2>작업 리듬에 맞는 요금제를 선택하세요</h2>
+          <p>14일 무료 체험으로 시작하고, 팀 협업이 필요할 때 업그레이드하세요.</p>
+          <ul class="pricing-benefits">
+            <li>무제한 문서 업로드</li>
+            <li>실시간 AI 전환</li>
+            <li>보안 버전 히스토리</li>
+            <li>전문 에디터 매칭</li>
+          </ul>
+        </div>
+        <div class="pricing-tier">
+          <h3>솔로 작가</h3>
+          <p class="price">
+            <span>$19</span><span>/월</span>
+          </p>
+          <ul>
+            <li>동시 진행 프로젝트 5개</li>
+            <li>DOCX · PDF 내보내기</li>
+            <li>핵심 문법 · 스타일 검사</li>
+          </ul>
+          <a class="btn btn-primary" href="#cta">체험 시작</a>
+        </div>
+        <div class="pricing-tier highlighted">
+          <h3>작가실 팀</h3>
+          <p class="price">
+            <span>$49</span><span>/월</span>
+          </p>
+          <ul>
+            <li>무제한 협업 멤버</li>
+            <li>고급 서사형 모델</li>
+            <li>맞춤 내보내기 템플릿</li>
+            <li>전담 성공 에디터</li>
+          </ul>
+          <a class="btn btn-secondary" href="#cta">데모 신청</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="cta">
+      <div class="container cta-box">
+        <h2>Talgo로 더 빠르게 완성된 콘텐츠를 발행하세요</h2>
+        <p>몇 분 안에 문법, 어조, 표현 문제를 해결하는 팀에 합류하세요. 다음 초안을 업로드하고 차이를 느껴보세요.</p>
+        <div class="cta-actions">
+          <a href="auth-ko.html" class="btn btn-primary">Talgo 시작하기</a>
+          <a href="auth-ko.html" class="btn btn-secondary">계정 만들기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="#" aria-label="TG 탈고">
+          <span class="brand-mark" aria-hidden="true">TG</span>
+          <span class="brand-type">탈고</span>
+        </a>
+        <p>모든 문장을 더 높이. 작가를 위해, 출판 팀이 신뢰합니다.</p>
+      </div>
+      <nav aria-label="Footer" class="footer-nav">
+        <div>
+          <h4>제품</h4>
+          <ul>
+            <li><a href="#features">기능 소개</a></li>
+            <li><a href="#workflow">워크플로</a></li>
+            <li><a href="#pricing">요금제</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>회사</h4>
+          <ul>
+            <li><a href="#">회사 소개</a></li>
+            <li><a href="#">채용</a></li>
+            <li><a href="#">지원</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>자료실</h4>
+          <ul>
+            <li><a href="#">블로그</a></li>
+            <li><a href="#">에디터 템플릿</a></li>
+            <li><a href="#">보안</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="footer-meta">
+        <p>&copy; <span id="year"></span> Talgo. 모든 권리 보유.</p>
+        <div class="social-links">
+          <a href="#" aria-label="트위터 팔로우">Tw</a>
+          <a href="#" aria-label="링크드인 팔로우">In</a>
+          <a href="#" aria-label="디스코드 참여">Ds</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

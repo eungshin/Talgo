@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | Talgo Writing Assistant</title>
+  <meta name="description" content="Join Talgo to fix grammar, tone, and expression in real time. Sign up for your AI writing assistant." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/auth.css" />
+</head>
+<body>
+  <div class="noise-layer" aria-hidden="true"></div>
+  
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index.html" aria-label="TG Talgo">
+        <span class="brand-mark" aria-hidden="true">TG</span>
+        <span class="brand-type">Talgo</span>
+      </a>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="index.html">Back to Home</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <div class="container auth-container">
+      <div class="auth-card">
+        <div class="auth-header">
+          <h1 id="auth-title">Join Talgo</h1>
+          <p id="auth-subtitle">Start polishing your writing with AI-powered grammar and expression tools</p>
+        </div>
+
+        <!-- Success/Error Messages -->
+        <div id="auth-message" class="auth-message" style="display: none;">
+          <span id="message-text"></span>
+        </div>
+
+        <!-- Authentication Form -->
+        <form id="auth-form" class="auth-form">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email address" />
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter your password" />
+            <div class="password-requirements" id="password-requirements" style="display: none;">
+              <p>Password must be at least 8 characters long</p>
+            </div>
+          </div>
+
+          <div class="form-group" id="confirm-password-group" style="display: none;">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password" />
+          </div>
+
+          <button type="submit" class="btn btn-primary auth-submit" id="auth-submit">
+            <span id="submit-text">Create Account</span>
+            <span id="submit-spinner" class="spinner" style="display: none;">⟳</span>
+          </button>
+        </form>
+
+        <!-- Mode Toggle -->
+        <div class="auth-toggle">
+          <p id="toggle-text">Already have an account?</p>
+          <button type="button" class="btn-link" id="mode-toggle">Sign In</button>
+        </div>
+
+        <!-- Social Auth Options (placeholder for future) -->
+        <div class="auth-divider">
+          <span>or</span>
+        </div>
+        
+        <div class="social-auth">
+          <p class="social-note">More authentication options coming soon</p>
+        </div>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="auth-info">
+        <div class="feature-highlights">
+          <h3>Why join L4 Sentence Review?</h3>
+          <ul>
+            <li>
+              <span class="highlight-icon">✓</span>
+              Fix grammar and punctuation in real time
+            </li>
+            <li>
+              <span class="highlight-icon">✓</span>
+              Rewrite tone and style while preserving your voice
+            </li>
+            <li>
+              <span class="highlight-icon">✓</span>
+              Collaborate with your team on documents
+            </li>
+            <li>
+              <span class="highlight-icon">✓</span>
+              Export to docs, slides, and email templates
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="auth-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> L4QH. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Supabase Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.38.0/dist/umd/supabase.js"></script>
+  
+  <!-- Authentication JavaScript -->
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

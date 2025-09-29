@@ -1,0 +1,4 @@
+window.SUPABASE_CONFIG = {
+  URL: 'https://dbsxwhwwdedfygrfibeh.supabase.co',
+  ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImRic3h3aHd3ZGVkZnlncmZpYmVoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTkxMjY3ODksImV4cCI6MjA3NDcwMjc4OX0.d4smAuC55FMjMv1WhRjz3BjfMyKeBvTqcH3DL3_W5b4'
+};

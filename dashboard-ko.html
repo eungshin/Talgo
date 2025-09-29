@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>대시보드 | L4 문장 리뷰 프로그램</title>
+  <meta name="description" content="L4 문장 리뷰 대시보드 - 문서, 수정 사항, 설정을 관리하세요." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/auth.css" />
+</head>
+<body>
+  <div class="noise-layer" aria-hidden="true"></div>
+  
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="#" aria-label="L4 문장 리뷰">
+        <span class="brand-mark" aria-hidden="true">L4</span>
+        <span class="brand-type">Sentence Review</span>
+      </a>
+      <nav class="nav" aria-label="Primary" role="navigation">
+        <ul class="nav-list">
+          <li><a href="#documents">문서</a></li>
+          <li><a href="#corrections">수정 사항</a></li>
+          <li><a href="#settings">설정</a></li>
+        </ul>
+      </nav>
+      <div class="language-switch">
+        <a class="btn-language" href="dashboard.html" lang="en" aria-label="View site in English">
+          <span aria-hidden="true" class="lang-code">EN</span>
+          <span class="visually-hidden">English</span>
+        </a>
+      </div>
+      <div class="nav-actions">
+        <span id="user-email" class="user-info"></span>
+        <button class="btn btn-ghost" id="sign-out-btn">로그아웃</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="container">
+      <div class="dashboard-header">
+        <h1>L4 문장 리뷰에 오신 것을 환영합니다</h1>
+        <p id="welcome-message">AI 기반 어시스턴스로 글쓰기를 개선해 보세요</p>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dashboard-card">
+          <h3>빠른 시작</h3>
+          <p>문서를 업로드하거나 글쓰기를 시작하여 문법 및 스타일 제안을 받아보세요.</p>
+          <button class="btn btn-primary">새 문서 만들기</button>
+        </div>
+
+        <div class="dashboard-card">
+          <h3>최근 활동</h3>
+          <p>최근 문서가 없습니다. 수정된 문서가 여기에 표시됩니다.</p>
+        </div>
+
+        <div class="dashboard-card">
+          <h3>사용 통계</h3>
+          <p id="usage-stats">사용 통계를 불러오는 중...</p>
+        </div>
+      </div>
+
+      <div class="dashboard-features">
+        <div class="feature-section">
+          <h2>L4 문장 리뷰 기능 살펴보기</h2>
+          <div class="feature-grid">
+            <div class="feature-item">
+              <h4>문법 교정</h4>
+              <p>AI가 문법, 맞춤법, 구두점 오류를 실시간으로 찾아 수정합니다.</p>
+            </div>
+            <div class="feature-item">
+              <h4>어조 변환</h4>
+              <p>원하는 어조와 스타일로 텍스트를 변환하면서도 본래 의미를 보존합니다.</p>
+            </div>
+            <div class="feature-item">
+              <h4>표현 개선</h4>
+              <p>더 명확하고 효과적인 표현으로 문장을 개선합니다.</p>
+            </div>
+            <div class="feature-item">
+              <h4>팀 협업</h4>
+              <p>팀원들과 함께 문서를 편집하고 피드백을 공유할 수 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="auth-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> L4QH. 모든 권리 보유.</p>
+      <div class="footer-links">
+        <a href="#">개인정보처리방침</a>
+        <a href="#">이용약관</a>
+        <a href="#">고객지원</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Supabase Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.38.0/dist/umd/supabase.js"></script>
+  
+  <!-- Dashboard JavaScript -->
+  <script src="assets/js/dashboard-ko.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

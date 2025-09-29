@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Talgo Writing Assistant</title>
+  <meta name="description" content="Your Talgo dashboard - manage documents, corrections, and settings." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/auth.css" />
+</head>
+<body>
+  <div class="noise-layer" aria-hidden="true"></div>
+  
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="#" aria-label="L4 Sentence Review">
+        <span class="brand-mark" aria-hidden="true">L4</span>
+        <span class="brand-type">Sentence Review</span>
+      </a>
+      <nav class="nav" aria-label="Primary" role="navigation">
+        <ul class="nav-list">
+          <li><a href="#documents">Documents</a></li>
+          <li><a href="#corrections">Corrections</a></li>
+          <li><a href="#settings">Settings</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <span id="user-email" class="user-info"></span>
+        <button class="btn btn-ghost" id="sign-out-btn">Sign Out</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    <div class="container">
+      <div class="dashboard-header">
+        <h1>Welcome to L4 Sentence Review</h1>
+        <p id="welcome-message">Start improving your writing with AI-powered assistance</p>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dashboard-card">
+          <h3>Quick Start</h3>
+          <p>Upload a document or start writing to begin getting grammar and style suggestions.</p>
+          <button class="btn btn-primary">Create New Document</button>
+        </div>
+
+        <div class="dashboard-card">
+          <h3>Recent Activity</h3>
+          <p>No recent documents. Your corrected documents will appear here.</p>
+        </div>
+
+        <div class="dashboard-card">
+          <h3>Usage Stats</h3>
+          <p id="usage-stats">Loading your usage statistics...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Supabase Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.38.0/dist/umd/supabase.js"></script>
+  
+  <!-- Dashboard JavaScript -->
+  <script src="assets/js/dashboard.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
