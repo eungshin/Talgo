@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>회원가입 | 탈고 글쓰기 도구</title>
+  <meta name="description" content="탈고에 가입하여 실시간으로 문법, 어조, 표현을 수정하세요. AI 글쓰기 어시스턴트를 시작하세요." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/auth.css" />
+</head>
+<body>
+  <div class="noise-layer" aria-hidden="true"></div>
+  
+  <header class="site-header">
+    <div class="container nav-container">
+      <a class="brand" href="index-ko.html" aria-label="L4 문장 리뷰">
+        <span class="brand-mark" aria-hidden="true">L4</span>
+        <span class="brand-type">Sentence Review</span>
+      </a>
+      <div class="language-switch">
+        <a class="btn-language" href="auth.html" lang="en" aria-label="View site in English">
+          <span aria-hidden="true" class="lang-code">EN</span>
+          <span class="visually-hidden">English</span>
+        </a>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="index-ko.html">홈으로 돌아가기</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-main">
+    <div class="container auth-container">
+      <div class="auth-card">
+        <div class="auth-header">
+          <h1 id="auth-title">L4 문장 리뷰에 가입하세요</h1>
+          <p id="auth-subtitle">AI 기반 문법 및 표현 도구로 글쓰기를 완성해 보세요</p>
+        </div>
+
+        <!-- Success/Error Messages -->
+        <div id="auth-message" class="auth-message" style="display: none;">
+          <span id="message-text"></span>
+        </div>
+
+        <!-- Authentication Form -->
+        <form id="auth-form" class="auth-form">
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" name="email" required placeholder="이메일 주소를 입력하세요" />
+          </div>
+          
+          <div class="form-group">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" name="password" required placeholder="비밀번호를 입력하세요" />
+            <div class="password-requirements" id="password-requirements" style="display: none;">
+              <p>비밀번호는 최소 8자 이상이어야 합니다</p>
+            </div>
+          </div>
+
+          <div class="form-group" id="confirm-password-group" style="display: none;">
+            <label for="confirm-password">비밀번호 확인</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="비밀번호를 다시 입력하세요" />
+          </div>
+
+          <button type="submit" class="btn btn-primary auth-submit" id="auth-submit">
+            <span id="submit-text">계정 만들기</span>
+            <span id="submit-spinner" class="spinner" style="display: none;">⟳</span>
+          </button>
+        </form>
+
+        <!-- Mode Toggle -->
+        <div class="auth-toggle">
+          <p id="toggle-text">이미 계정이 있으신가요?</p>
+          <button type="button" class="btn-link" id="mode-toggle">로그인</button>
+        </div>
+
+        <!-- Social Auth Options (placeholder for future) -->
+        <div class="auth-divider">
+          <span>또는</span>
+        </div>
+        
+        <div class="social-auth">
+          <p class="social-note">더 많은 인증 옵션이 곧 제공됩니다</p>
+        </div>
+      </div>
+
+      <!-- Additional Info -->
+      <div class="auth-info">
+        <div class="feature-highlights">
+          <h3>왜 L4 문장 리뷰를 선택해야 할까요?</h3>
+          <ul>
+            <li>
+              <span class="highlight-icon">✓</span>
+              실시간으로 문법과 구두점 오류 수정
+            </li>
+            <li>
+              <span class="highlight-icon">✓</span>
+              당신의 목소리를 보존하면서 어조와 스타일 변경
+            </li>
+            <li>
+              <span class="highlight-icon">✓</span>
+              팀과 함께 문서 협업
+            </li>
+            <li>
+              <span class="highlight-icon">✓</span>
+              문서, 슬라이드, 이메일 템플릿으로 내보내기
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="auth-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> L4QH. 모든 권리 보유.</p>
+      <div class="footer-links">
+        <a href="#">개인정보처리방침</a>
+        <a href="#">이용약관</a>
+        <a href="#">고객지원</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Supabase Client -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.38.0/dist/umd/supabase.js"></script>
+  
+  <!-- Authentication JavaScript -->
+  <script src="assets/js/auth-ko.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
